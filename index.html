@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+<meta charset=utf-8>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name=viewport content="width=device-width,height=device-height,initial-scale=1">
+<title>M2RTech</title>
+<style>@media(max-width:1043px) and (min-width:992px){.hide-1043992{display:none!important}}
+
+#block1{
+float:left;
+font-size: 16px!important;
+ position:relative;
+ height:auto;
+padding:5px;
+margin-left:5px;
+margin-bottom:20px;
+margin-top:20px;
+border:2px solid red;
+ border-radius:10px;
+  border-bottom:2px solid black;
+}
+a{
+text-decoration:none;}
+
+  #id1,#id2,#id3,#id5,#id6,#id9
+{
+ margin-top:20px;
+ font-size: 16px!important;
+ position:relative;
+ display:block;
+ width:85%;
+height:auto;
+padding:10px;
+
+border-radius:10px;
+margin-left:5px;
+}
+#main
+{
+border-radius:10px;
+background-color:#cccc00;
+padding:10px;
+
+}
+#id1
+{
+background-color:#ffd9b3;
+
+}
+#id2
+{
+background-color: #ffe5cc;
+
+}
+#id3
+{
+background-color:#ccffcc;
+
+}
+
+#id5
+{
+background-color: #b3cce6;
+
+}
+#id6
+{
+background-color:#ccccff;
+
+}
+
+#id9
+{
+background-color:#ffe5cc;
+}
+
+body{
+font-family: Arial,Verdana,Tahoma;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.429;
+	}
+
+
+#heading{
+text-align:center;
+ margin-top:30px;
+ font-size: 16px!important;
+ position:relative;
+ display:block;
+ width:94%;
+height:auto;
+padding:10px;
+background-color:#cce0ff;
+border-radius:10px;
+margin-left:5px;
+}
+
+button {
+  border: none;
+  color:white;
+  background-color: #008CBA;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  
+  display: inline-block;
+  font-size: 16px!important;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+</style>
+
+</head>
+<body>
+<script>
+document.addEventListener('contextmenu',event=>event.preventDefault());
+
+
+</script>
+
+
+
+
+<div id="main">
+<div id='heading'>
+<h2>Learning Adda</h2>
+</div>
+
+<div id="block1">
+<h2><a href="">Home</a></h2>
+</div>
+<div id="block1">
+<h2><a href="">Python</a></h2>
+</div>
+<div id="block1">
+<h2><a href="">Blog</a></h2>
+</div>
+
+<div id="id1">
+<h2>Python Tutorial</h2>
+<h3>Why Python?</h3>
+  
+  <ul>
+  <li>Python is one of the languages that is witnessing incredible growth and 
+  popularity year by year.</li>
+  <li>In 2017, Stackoverflow calculated that python 
+  would beat all other programming languages by 2020 as it has become the 
+  fastest-growing programming language in the world.</li>
+  <li>It is also considered one of the best programming languages for machine learning.</li>
+  </ul>
+  
+
+  
+  
+  <button type="button" ><a href="pythonvideo.html">Learn Python</a></button>
+</div>
+<div id="id2">
+<h2>Python My-SQL</h2>
+<h3>Content:</h3>
+  
+  <ol>
+  <li>Python My-Sql Connection.</li>
+  <li>Insert,Update,Select queries.</li>
+  <li>Storing and retriving data from database.</li>
+  </ol>
+  
+  
+  
+   <button type="button" ><a href="pysql.html">Learn Python-MySQL</a></button>
+ </div>
+ 
+ <div id="id3">
+<h2>Programming Code</h2>
+<h3>Content:</h3>
+  
+ <ol>
+ <li>Programming Level By Level.</li>
+ <li>programming code of simple and Complex program.</li>
+ <li>Programming questions Asked in various campus.Ex TCS,Infytq,Hacker-Rank etc.</li>
+ </ol>
+
+  
+  <button type="button"><a href="Basic Quitions.html">Build Programming Logic</a></button>
+ </div>
+ 
+ 
+ 
+ <div id="id5">
+<h2>Interview Questions</h2>
+<h3>Content</h3>
+  
+  
+  <ol>
+  <li>Question on Data Structure,C++,DBMS.</li>
+  <li>Question asked in Campus Interview.</li>
+  </ol>
+  
+  <button type="button"><a href="pyq.html">Interview Questions</a></button>
+  </h3>
+ 
+ </div>
+ <div id="id6">
+<h2>Quiz</h2>
+<h3>Content:</h3>
+  
+  <ol>
+  <li>Python Quizes.</li>
+  <li>C++ Quizes.</li>
+  <li>C Quizes.</li>
+  <li>Java Quizes.</li>
+  </ol>
+  
+  <button type="button" ><a href="radioquiz.html">Start Your Quizes.</a></button>
+ </div>
+ 
+ <?php include 'info.php';?>
+  <div id="id9">
+  <h3>Contact Details:</h3>
+  <form name="myform1"  method="post" action="info.php">
+  
+   <h4><label>First Name:</label>
+   <input type = "text" name = "fname"/></h4>
+   <h4><label>Last Name:</label> 
+   <input type = "text" name ="lname" /></h4>
+   
+    <h4><label>Phone Number:</label>
+   <input type ="number" name="phno"  required /></h4>
+   <h4><label>Email:</label>
+   <input type="email" name="Email"></h4>
+  <button type ="submit" >Submit</button>
+  
+   </form>
+   </div>
+ </div>
+</body>
+</html>

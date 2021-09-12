@@ -1,0 +1,259 @@
+<!doctype html>
+<html>
+ <head> 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    
+    #id1{
+      background-color:#B590D5;
+      color:white;
+      width:300px;
+      height:70px;
+      border:2px solid black;
+      text-font:14px;
+      padding:10px;
+    }
+     body{
+       background-color:pink;
+     }
+	 #lnk a{
+	   text-decoration:none;
+	   }
+	   #lnk{
+	    margin-left:60px;
+		}
+		 #i1{
+margin-left:50px;
+}
+     </style> 
+ 
+  </head> 
+ <body onload="abc()">
+  
+<script>
+
+//To prevent source code of web page..
+ document.addEventListener('contextmenu',event=>event.preventDefault());
+//-------------
+var score =0;
+var a;
+   var que =[{
+     prompt:`1)What is the output of following ?
+     a=[1,2,3,2]
+     print(a.index(2))
+     
+      (a) 4
+      (b) 2
+      (c) 1
+      (d)error`,
+     answer:"c"
+   },
+   {
+     prompt:`2)What is the output of following?
+     a=[7,3,5,1]
+     print(sorted(a))
+     
+     (a)[1,3,5,7]
+     (b)Error
+     (c)[7,3,5,1]`,
+     answer:"a"
+   },
+     {
+     prompt:`3)What is the output of following?
+     a=['h','b','a']
+     print(a.sorted())
+     
+     (a)Error
+     (b)['h','b','a']
+     (c)['a','b','h']`,
+     answer:"a"
+   },
+     {
+     prompt:`4)What is the output of following?
+     a=2**2**3**1
+     print(a)
+     (a) 12
+     (b) 64
+     (c) 256
+     (d) 128`,
+     answer:"c"
+   },
+     {
+     prompt:`5)What is the output of following?
+     a=(1,2,3,4)
+     a[2]=5
+     print(a)
+     
+     (a) (1,2,3,4)
+     (b) (1,2,5,4)
+     (c) (1,5,3,4)
+     (d) Error`,
+     answer:"d"
+   },
+      {
+     prompt:`6)What is the output of following?
+     a=(1,2,3,4)
+     del a[2]
+     print(a)
+     
+     (a) (1,2,3,4)
+     (b) (1,2,4)
+     (c) (1,3,4)
+     (d) Error`,
+     answer:"d"
+   },
+   
+      {
+     prompt:`7)What is the output of following?
+     for i in [1,2,3,4]:
+       if i==3:
+         break
+       print(i)
+     (a)1 2 3
+     (b)1 2
+     (c)1 2 4`,
+     answer:"b"
+   },
+      {
+     prompt:`8)What is the output of following?
+     for i in [1,2,3,4]:
+       if i==3:
+         continue
+       print(i)
+     (a)1 2 3
+     (b)1 2
+     (c)1 2 4`,
+     answer:"c"
+   },
+   
+      {
+     prompt:`9)What is the output of following?
+      li1=[1,3,5,7]
+      li1+30
+      print(li1)
+     (a)30
+     (b)Error
+     (c)[1,3,5,7,30]`,
+     answer:"b"
+   },
+   
+      {
+    
+     prompt:`10)What is the output of following?
+     list1=[1,6,8,5,4]
+     print(list1[0:3])
+     
+     (a)[1,6,8]
+     (b)[1,6,8,5]
+     (c)Error`,
+     answer:"a"
+   }];
+   
+  
+  
+  var pass=prompt("Enter Password");
+  
+   a=prompt("Enter your First Name and Last Name");
+   var i;
+   if(pass=="m2rtech" && a!=""){
+   
+	
+	alert("For answers you must type option ex.a, b, c, etc..")
+   for(i =0; i < que.length; i++){
+     
+       var responce = window.prompt(que[i].prompt);
+	   if responce==''
+	   {
+	    alert("All questions are compulsory.");
+	    responce = window.prompt(que[i].prompt);
+		}
+     
+      if(responce == que[i].answer){
+     score =score+1;
+	 }
+      }
+ 
+function abc() {
+  document.forms["myform"]["FirstName"].value=a;
+  document.forms["myform"]["Score"].value=score;
+  document.getElementById("i1").submit();
+ 
+ alert("Succesfully submited");
+  
+}	  
+  if(score>5){
+     
+   
+   alert("Good performance "+a+". You got "+score+"/"+que.length);}
+ 
+   if(score<5){
+     
+  
+   alert("Poor performance "+a+". You got "+score+"/"+que.length);}
+ 
+   if(score ==10){
+     
+   alert("Excellent performance");
+   }
+ 
+ 
+}
+  else
+   {
+   alert("Please Enter First Name and Last Name OR Enter Correct Password");
+   }
+/*   
+ alert("Thank you for quiz your score is recorded...");
+ // Store data
+ localStorage.setItem(a, score);
+ 
+ admin=prompt("Only for admin.. enter your password");
+ 
+if(admin=="mr"){
+for (var i = 0; i < localStorage.length; i++) {
+
+  // set iteration key name
+  var key = localStorage.key(i);
+
+  // use key name to retrieve the corresponding value
+  var value = localStorage.getItem(key);
+  console.log('Name: ' + key + '  Score: ' + value);  //show data on console...to see data on chrome press ctrl+shift+j
+    }
+	
+	var data=prompt("Want to remove all data of students");
+  if(data =='y')
+  {
+  localStorage.clear();
+  }
+  
+ }
+ 
+ To store data in array in key value pair
+ var dict=[];
+ 
+ dict.push({name:key,score:value});  
+console.log(dict);
+ 
+ 
+ 
+ To store data and display on window
+  alert('Name: ' + key + '  Score: ' + value);  
+ 
+ */
+ 
+</script>  
+<?php include 'score.php';?>
+
+ <p><h2>Don't Fill Anything<br>Your Name and Score is submited Automaticaly .</h2></p>
+ <form name="myform" id="i1" method="post" action="score.php">
+  
+	
+     Name: <input type="text" name="FirstName" size="20" placeholder="Dont fill"><br><br>
+     Score: <input type="text" name="Score" size="20" placeholder="Dont fill"><br><br>
+	
+   
+ </form>
+
+ 
+ </body>
+</html>
